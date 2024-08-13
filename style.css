@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  /* background: #888; */
+  overflow: hidden;
+}
+.parent {
+  height: 60vh;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.orange,
+.white,
+.green {
+  height: 33.33%;
+  width: 100%;
+  transition: all 2s;
+}
+.orange {
+  background: #ff9933;
+}
+.white {
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.green {
+  background: #138808;
+}
+
+.white img {
+  width: 15%;
+  animation: rotate 3s infinite linear;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50%{
+    width: 20%;
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.wish{
+  margin-top: 30px;
+  text-align: center;
+  font-size: 100px;
+  font-family: "Trade Winds", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+.dev{
+  text-align: center;
+  font-family: "Trade Winds", system-ui;
+  font-size: 20px;
+}
